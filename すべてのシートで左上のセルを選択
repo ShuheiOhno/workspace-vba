@@ -1,0 +1,12 @@
+Sub MoveToCellA1_AllSheet()
+  Dim WB As Workbook
+  Set WB = ActiveWorkbook
+  
+  Dim WS As Worksheet
+  For Each WS In WB.Worksheets
+    WS.Activate
+    WS.Cells(1, 1).Select
+  Next
+  
+  WB.Worksheets(1).Activate
+End Sub
