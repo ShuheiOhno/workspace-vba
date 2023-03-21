@@ -6,7 +6,10 @@ Sub MoveToCellA1_AllSheet()
   For Each WS In WB.Worksheets
     WS.Activate
     WS.Cells(1, 1).Select
+    '倍率100%
+    ActiveWindow.Zoom = 100
   Next
   
   WB.Worksheets(1).Activate
 End Sub
+
